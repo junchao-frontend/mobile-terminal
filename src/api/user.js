@@ -1,5 +1,4 @@
 import request from '../utils/request'
-import store from '@/store/index.js'
 // 用户登录
 export const login = data => {
   return request({
@@ -20,9 +19,9 @@ export const getCode = mobile => {
 export const getCurrentUser = () => {
   return request({
     method: 'GET',
-    url: '/v1_0/user',
-    headers: {
-      Authorization: `Bearer ${store.state.user.token}`
-    }
+    url: '/v1_0/user'
+    // headers: {
+    //   Authorization: `Bearer ${store.state.user.token}`
+    // }
   })
 }

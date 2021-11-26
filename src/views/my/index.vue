@@ -102,7 +102,7 @@ export default {
     loadUser () {
       getCurrentUser().then(res => {
         this.CurrentUser = res.data.data
-        console.log(res)
+        // console.log(res)
       })
     },
     toLogin () {
