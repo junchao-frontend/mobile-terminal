@@ -81,6 +81,7 @@ export default {
         const res = await login(this.form)
         console.log(res)
         this.$toast.success('登录成功')
+        this.$store.commit('SetUser', res.data.data)
         this.$router.push('/')
       } catch (err) {
         console.log(err)

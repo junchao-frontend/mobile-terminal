@@ -1,6 +1,5 @@
 <template>
   <div class="home-container">
-      首页
   </div>
 </template>
 
@@ -14,7 +13,8 @@ export default {
   computed: {},
   created () {},
   mounted () {},
-  methods: {}
+  methods: {
+  }
 }
 </script>
 
