@@ -87,7 +87,7 @@ export default {
   data () {
     return {
       avator: require('./avator.jpg'), // 用户头像
-      CurrentUser: {}
+      CurrentUser: {} // 不能写为null 否则会报错
     }
   },
   computed: {
